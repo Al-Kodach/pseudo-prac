@@ -1,0 +1,134 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    color: rgb(66, 62, 62);
+}
+
+fieldset {
+    position: relative;
+    padding: 1.5rem 3rem;
+}
+
+fieldset legend {
+    font-size: 1.5rem;
+    border: 1px solid rgb(73, 69, 69);
+    padding: .5rem 1rem;
+    border-radius: .5em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+fieldset div {
+    padding: .2rem;
+}
+
+fieldset div label{
+    padding: .2rem 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+fieldset div[class="container"] {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+
+fieldset div input[type="text"],
+input[type="email"] {
+    padding: .25rem .5rem;
+    font-size: 1.2rem;
+    color: rgb(100, 84, 84);
+    text-indent: 2px;
+    border: 1px solid;
+    border-radius: .25rem;
+}
+
+fieldset div[class="status"] {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+fieldset div[class="status"] select{
+
+    cursor: pointer;
+}
+
+fieldset div[class="language"] {
+    margin: 4rem 0 .2rem ;
+}
+
+fieldset div[class="language"] p {
+    font-weight: bold;
+    font-size: .75rem;
+}
+
+fieldset div[class="language"] span {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .2rem;
+    border: 1px solid;
+    border-radius: .25rem;
+    padding: 1rem .2rem;
+}
+
+fieldset div[class="language"] span * {
+    cursor: pointer;
+}
+
+fieldset div[class="language"] span *:not(input){
+    margin-right: .75rem;
+    padding-left: 0;
+}
+
+fieldset div[class="date"] {
+    position: absolute;
+    bottom: 330px;
+    left: 170px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+fieldset div[class="date"] input {
+    cursor: pointer;
+}
+
+fieldset div[class="t&c"] {
+    margin: .5rem 0;
+}
+
+fieldset div[class="t&c"] * {
+    cursor: pointer;
+}
+
+fieldset div[class="submit-btn"] {
+    text-align: center;
+}
+
+fieldset div[class="submit-btn"] button {
+    font-size: 1.2rem;
+    padding: .5rem 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    border-radius: .25rem;
+    background-color: rgb(160, 112, 112);
+    color: whitesmoke;
+    transition: background-color .25s, color .25s;
+    cursor: pointer;
+}
+
+fieldset div[class="submit-btn"] button:hover {
+    background: transparent;
+    color: rgb(160, 112, 112);
+
+}
